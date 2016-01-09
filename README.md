@@ -29,9 +29,21 @@ Check twice if CQRS is really usefull for the specific implementation.
 
 ## For which kind of application of application parts CQRS is recommended?
 - It is recommended for application with a huge difference in amount betweenread and write operations like a huge online shop 
+- TDB
 
 # NuGet
 The core project is available on NuGet
 ```
 Install-Package MicroCQRS
 ```
+
+# License
+MIT
+
+# Examples
+
+## AddressManager
+AddressManager is a sample application when to use NOT CQRS.
+You can see: CRUD would be more simpel and less complicated here.
+
+# Remarks
