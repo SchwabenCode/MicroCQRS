@@ -7,7 +7,7 @@ The following elements are not implemented due to the simplicity:
 - Persistent Event Store
 - Versioning
 - Aggregation
-- Asynchronuous behaviors
+- Asynchronous behaviors
 - Command chaining
 - Momentos
 
