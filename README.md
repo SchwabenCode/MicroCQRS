@@ -25,7 +25,7 @@ CQRS is a great pattern to seperate queries (ex. read operations) from commands 
 - One of the main targets is to improve read and write operations due to the great potentialities of scalability. Do you really have this requirement?
 
 Due to this disadvantages it is not recommended to encompass the whole application by CQRS.
-Check twice if CQRS is really usefull for the specific implementation.
+Check twice if CQRS is really usefull for the specific purpose.
 
 ## For which kind of application / application parts CQRS is recommended?
 - It is recommended for application with a huge difference in amount between read and write operations like a huge online shop 
