@@ -32,9 +32,9 @@ Check twice if CQRS is really usefull for the specific purpose.
 - *add here more reasons and examples soon*
 
 # NuGet
-The core project is available on NuGet
+The core project is available on NuGet (at this point as preview!)
 ```
-Install-Package MicroCQRS
+Install-Package MicroCQRS -Version 0.0.1-pre -Pre
 ```
 
 # License
