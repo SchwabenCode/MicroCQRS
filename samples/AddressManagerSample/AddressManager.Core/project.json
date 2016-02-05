@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0-*",
+  "description": "AddressManager.Core Class Library - CQRS Micro Example",
+  "authors": [ "Benjamin Abt", "SchwabenCode" ],
+  "tags": [ "" ],
+  "projectUrl": "https://github.com/SchwabenCode/MicroCQRS",
+  "licenseUrl": "https://github.com/SchwabenCode/MicroCQRS/blob/master/LICENSE",
+
+  "dependencies": {
+    "AddressManager.Domain": "1.0.0-*",
+    "Unity": "4.0.1",
+    "MicroCQRS": "1.0.0-*",
+    "AddressManager.Commands": "1.0.0-*",
+    "AddressManager.Queries": "1.0.0-*",
+    "AddressManager.Database": "1.0.0-*",
+    "AddressManager.Database.Commands": "1.0.0-*",
+    "AddressManager.Database.Queries": "1.0.0-*",
+    "AddressManager.Tracing.Console": "1.0.0-*",
+    "AddressManager.Tracing.Console.Commands": "1.0.0-*"
+  },
+
+  "frameworks": {
+    "dnx451": {
+      "frameworkAssemblies": {
+        "System.Runtime": ""
+      }
+    }
+  }
+}

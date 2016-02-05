@@ -1,0 +1,235 @@
+{
+  "locked": false,
+  "version": 2,
+  "targets": {
+    "DNX,Version=v4.5.1": {
+      "AddressManager.Database/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "AddressManager.Domain": "1.0.0",
+          "MicroCQRS": "1.0.0"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "AddressManager.Domain/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "AddressManager.Queries/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "AddressManager.Domain": "1.0.0",
+          "MicroCQRS": "1.0.0"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "MicroCQRS/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "Microsoft.CSharp": "4.0.0"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "Microsoft.CSharp/4.0.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      }
+    },
+    "DNX,Version=v4.5.1/win7-x86": {
+      "AddressManager.Database/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "AddressManager.Domain": "1.0.0",
+          "MicroCQRS": "1.0.0"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "AddressManager.Domain/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "AddressManager.Queries/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "AddressManager.Domain": "1.0.0",
+          "MicroCQRS": "1.0.0"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "MicroCQRS/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "Microsoft.CSharp": "4.0.0"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "Microsoft.CSharp/4.0.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      }
+    },
+    "DNX,Version=v4.5.1/win7-x64": {
+      "AddressManager.Database/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "AddressManager.Domain": "1.0.0",
+          "MicroCQRS": "1.0.0"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "AddressManager.Domain/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "AddressManager.Queries/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "AddressManager.Domain": "1.0.0",
+          "MicroCQRS": "1.0.0"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "MicroCQRS/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "Microsoft.CSharp": "4.0.0"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "Microsoft.CSharp/4.0.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AddressManager.Database/1.0.0": {
+      "type": "project",
+      "path": "../AddressManager.Database/project.json"
+    },
+    "AddressManager.Domain/1.0.0": {
+      "type": "project",
+      "path": "../AddressManager.Domain/project.json"
+    },
+    "AddressManager.Queries/1.0.0": {
+      "type": "project",
+      "path": "../AddressManager.Queries/project.json"
+    },
+    "MicroCQRS/1.0.0": {
+      "type": "project",
+      "path": "../../../src/MicroCQRS/project.json"
+    },
+    "Microsoft.CSharp/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "oWqeKUxHXdK6dL2CFjgMcaBISbkk+AqEg+yvJHE4DElNzS4QaTsCflgkkqZwVlWby1Dg9zo9n+iCAMFefFdJ/A==",
+      "files": [
+        "lib/dotnet/Microsoft.CSharp.dll",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/Microsoft.CSharp.dll",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "Microsoft.CSharp.4.0.0.nupkg",
+        "Microsoft.CSharp.4.0.0.nupkg.sha512",
+        "Microsoft.CSharp.nuspec",
+        "ref/dotnet/de/Microsoft.CSharp.xml",
+        "ref/dotnet/es/Microsoft.CSharp.xml",
+        "ref/dotnet/fr/Microsoft.CSharp.xml",
+        "ref/dotnet/it/Microsoft.CSharp.xml",
+        "ref/dotnet/ja/Microsoft.CSharp.xml",
+        "ref/dotnet/ko/Microsoft.CSharp.xml",
+        "ref/dotnet/Microsoft.CSharp.dll",
+        "ref/dotnet/Microsoft.CSharp.xml",
+        "ref/dotnet/ru/Microsoft.CSharp.xml",
+        "ref/dotnet/zh-hans/Microsoft.CSharp.xml",
+        "ref/dotnet/zh-hant/Microsoft.CSharp.xml",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/Microsoft.CSharp.dll",
+        "ref/netcore50/Microsoft.CSharp.xml",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "": [
+      "MicroCQRS >= 1.0.0-*",
+      "AddressManager.Domain >= 1.0.0-*",
+      "AddressManager.Queries >= 1.0.0-*",
+      "AddressManager.Database >= 1.0.0-*"
+    ],
+    "DNX,Version=v4.5.1": [
+      "fx/System.Runtime "
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "AddressManager.Domain Class Library - CQRS Micro Example",
+  "authors": [ "Benjamin Abt", "SchwabenCode" ],
+  "tags": [ "" ],
+  "projectUrl": "https://github.com/SchwabenCode/MicroCQRS",
+  "licenseUrl": "https://github.com/SchwabenCode/MicroCQRS/blob/master/LICENSE",
+
+
+  "dependencies": {
+  },
+
+  "frameworks": {
+    "dnx451": {
+      "frameworkAssemblies": {
+        "System.Runtime": ""
+      }
+    }
+  }
+}

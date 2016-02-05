@@ -1,0 +1,20 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "MicroCQRS Class Library",
+  "authors": [ "Benjamin Abt", "SCHWABENCODE" ],
+  "tags": [ "CQRS, CQS", "Event Sourcing", "SchwabenCode", "Benjamin Abt" ],
+  "projectUrl": "https://github.com/SchwabenCode/MicroCQRS",
+  "licenseUrl": "https://github.com/SchwabenCode/MicroCQRS/blob/master/LICENSE",
+
+  "dependencies": {
+    "Microsoft.CSharp": "4.0.0"
+  },
+
+  "frameworks": {
+    "dnx451": {
+      "frameworkAssemblies": {
+        "System.Runtime": ""
+      }
+    }
+  }
+}

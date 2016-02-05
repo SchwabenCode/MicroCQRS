@@ -1,0 +1,606 @@
+{
+  "locked": false,
+  "version": 2,
+  "targets": {
+    "DNX,Version=v4.5.1": {
+      "AddressManager.Commands/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "AddressManager.Domain": "1.0.0",
+          "MicroCQRS": "1.0.0",
+          "Unity": "4.0.1"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "AddressManager.Core/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "AddressManager.Commands": "1.0.0",
+          "AddressManager.Database": "1.0.0",
+          "AddressManager.Database.Commands": "1.0.0",
+          "AddressManager.Database.Queries": "1.0.0",
+          "AddressManager.Domain": "1.0.0",
+          "AddressManager.Queries": "1.0.0",
+          "AddressManager.Tracing.Console": "1.0.0",
+          "AddressManager.Tracing.Console.Commands": "1.0.0",
+          "MicroCQRS": "1.0.0",
+          "Unity": "4.0.1"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "AddressManager.Database/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "AddressManager.Domain": "1.0.0",
+          "MicroCQRS": "1.0.0"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "AddressManager.Database.Commands/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "AddressManager.Commands": "1.0.0",
+          "AddressManager.Database": "1.0.0",
+          "MicroCQRS": "1.0.0"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "AddressManager.Database.Queries/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "AddressManager.Database": "1.0.0",
+          "AddressManager.Domain": "1.0.0",
+          "AddressManager.Queries": "1.0.0",
+          "MicroCQRS": "1.0.0"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "AddressManager.Domain/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "AddressManager.Queries/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "AddressManager.Domain": "1.0.0",
+          "MicroCQRS": "1.0.0"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "AddressManager.Tracing.Console/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "MicroCQRS": "1.0.0"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "AddressManager.Tracing.Console.Commands/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "AddressManager.Commands": "1.0.0",
+          "AddressManager.Tracing.Console": "1.0.0",
+          "MicroCQRS": "1.0.0"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "CommonServiceLocator/1.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
+        }
+      },
+      "MicroCQRS/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "Microsoft.CSharp": "4.0.0"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "Microsoft.CSharp/4.0.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "Unity/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Practices.Unity.Configuration.dll": {},
+          "lib/net45/Microsoft.Practices.Unity.dll": {},
+          "lib/net45/Microsoft.Practices.Unity.RegistrationByConvention.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Practices.Unity.Configuration.dll": {},
+          "lib/net45/Microsoft.Practices.Unity.dll": {},
+          "lib/net45/Microsoft.Practices.Unity.RegistrationByConvention.dll": {}
+        }
+      }
+    },
+    "DNX,Version=v4.5.1/win7-x86": {
+      "AddressManager.Commands/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "AddressManager.Domain": "1.0.0",
+          "MicroCQRS": "1.0.0",
+          "Unity": "4.0.1"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "AddressManager.Core/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "AddressManager.Commands": "1.0.0",
+          "AddressManager.Database": "1.0.0",
+          "AddressManager.Database.Commands": "1.0.0",
+          "AddressManager.Database.Queries": "1.0.0",
+          "AddressManager.Domain": "1.0.0",
+          "AddressManager.Queries": "1.0.0",
+          "AddressManager.Tracing.Console": "1.0.0",
+          "AddressManager.Tracing.Console.Commands": "1.0.0",
+          "MicroCQRS": "1.0.0",
+          "Unity": "4.0.1"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "AddressManager.Database/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "AddressManager.Domain": "1.0.0",
+          "MicroCQRS": "1.0.0"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "AddressManager.Database.Commands/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "AddressManager.Commands": "1.0.0",
+          "AddressManager.Database": "1.0.0",
+          "MicroCQRS": "1.0.0"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "AddressManager.Database.Queries/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "AddressManager.Database": "1.0.0",
+          "AddressManager.Domain": "1.0.0",
+          "AddressManager.Queries": "1.0.0",
+          "MicroCQRS": "1.0.0"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "AddressManager.Domain/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "AddressManager.Queries/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "AddressManager.Domain": "1.0.0",
+          "MicroCQRS": "1.0.0"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "AddressManager.Tracing.Console/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "MicroCQRS": "1.0.0"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "AddressManager.Tracing.Console.Commands/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "AddressManager.Commands": "1.0.0",
+          "AddressManager.Tracing.Console": "1.0.0",
+          "MicroCQRS": "1.0.0"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "CommonServiceLocator/1.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
+        }
+      },
+      "MicroCQRS/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "Microsoft.CSharp": "4.0.0"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "Microsoft.CSharp/4.0.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "Unity/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Practices.Unity.Configuration.dll": {},
+          "lib/net45/Microsoft.Practices.Unity.dll": {},
+          "lib/net45/Microsoft.Practices.Unity.RegistrationByConvention.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Practices.Unity.Configuration.dll": {},
+          "lib/net45/Microsoft.Practices.Unity.dll": {},
+          "lib/net45/Microsoft.Practices.Unity.RegistrationByConvention.dll": {}
+        }
+      }
+    },
+    "DNX,Version=v4.5.1/win7-x64": {
+      "AddressManager.Commands/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "AddressManager.Domain": "1.0.0",
+          "MicroCQRS": "1.0.0",
+          "Unity": "4.0.1"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "AddressManager.Core/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "AddressManager.Commands": "1.0.0",
+          "AddressManager.Database": "1.0.0",
+          "AddressManager.Database.Commands": "1.0.0",
+          "AddressManager.Database.Queries": "1.0.0",
+          "AddressManager.Domain": "1.0.0",
+          "AddressManager.Queries": "1.0.0",
+          "AddressManager.Tracing.Console": "1.0.0",
+          "AddressManager.Tracing.Console.Commands": "1.0.0",
+          "MicroCQRS": "1.0.0",
+          "Unity": "4.0.1"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "AddressManager.Database/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "AddressManager.Domain": "1.0.0",
+          "MicroCQRS": "1.0.0"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "AddressManager.Database.Commands/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "AddressManager.Commands": "1.0.0",
+          "AddressManager.Database": "1.0.0",
+          "MicroCQRS": "1.0.0"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "AddressManager.Database.Queries/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "AddressManager.Database": "1.0.0",
+          "AddressManager.Domain": "1.0.0",
+          "AddressManager.Queries": "1.0.0",
+          "MicroCQRS": "1.0.0"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "AddressManager.Domain/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "AddressManager.Queries/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "AddressManager.Domain": "1.0.0",
+          "MicroCQRS": "1.0.0"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "AddressManager.Tracing.Console/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "MicroCQRS": "1.0.0"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "AddressManager.Tracing.Console.Commands/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "AddressManager.Commands": "1.0.0",
+          "AddressManager.Tracing.Console": "1.0.0",
+          "MicroCQRS": "1.0.0"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "CommonServiceLocator/1.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
+        }
+      },
+      "MicroCQRS/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "Microsoft.CSharp": "4.0.0"
+        },
+        "frameworkAssemblies": [
+          "System.Runtime"
+        ]
+      },
+      "Microsoft.CSharp/4.0.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "Unity/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Practices.Unity.Configuration.dll": {},
+          "lib/net45/Microsoft.Practices.Unity.dll": {},
+          "lib/net45/Microsoft.Practices.Unity.RegistrationByConvention.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Practices.Unity.Configuration.dll": {},
+          "lib/net45/Microsoft.Practices.Unity.dll": {},
+          "lib/net45/Microsoft.Practices.Unity.RegistrationByConvention.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AddressManager.Commands/1.0.0": {
+      "type": "project",
+      "path": "../AddressManager.Commands/project.json"
+    },
+    "AddressManager.Core/1.0.0": {
+      "type": "project",
+      "path": "../AddressManager.Core/project.json"
+    },
+    "AddressManager.Database/1.0.0": {
+      "type": "project",
+      "path": "../AddressManager.Database/project.json"
+    },
+    "AddressManager.Database.Commands/1.0.0": {
+      "type": "project",
+      "path": "../AddressManager.Database.Commands/project.json"
+    },
+    "AddressManager.Database.Queries/1.0.0": {
+      "type": "project",
+      "path": "../AddressManager.Database.Queries/project.json"
+    },
+    "AddressManager.Domain/1.0.0": {
+      "type": "project",
+      "path": "../AddressManager.Domain/project.json"
+    },
+    "AddressManager.Queries/1.0.0": {
+      "type": "project",
+      "path": "../AddressManager.Queries/project.json"
+    },
+    "AddressManager.Tracing.Console/1.0.0": {
+      "type": "project",
+      "path": "../AddressManager.Tracing.Console/project.json"
+    },
+    "AddressManager.Tracing.Console.Commands/1.0.0": {
+      "type": "project",
+      "path": "../AddressManager.Tracing.Console.Commands/project.json"
+    },
+    "MicroCQRS/1.0.0": {
+      "type": "project",
+      "path": "../../../src/MicroCQRS/project.json"
+    },
+    "CommonServiceLocator/1.3.0": {
+      "type": "package",
+      "sha512": "fbjO0SNwbOFPdwVfyqv+B7gIJ2CVBOFPKqn1mDDECK7KER8jFaOdcvroFYoAHa0ktPbxi5s+15qOLnA96f8GSA==",
+      "files": [
+        "CommonServiceLocator.1.3.0.nupkg",
+        "CommonServiceLocator.1.3.0.nupkg.sha512",
+        "CommonServiceLocator.nuspec",
+        "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll",
+        "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.pdb",
+        "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.XML"
+      ]
+    },
+    "Microsoft.CSharp/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "oWqeKUxHXdK6dL2CFjgMcaBISbkk+AqEg+yvJHE4DElNzS4QaTsCflgkkqZwVlWby1Dg9zo9n+iCAMFefFdJ/A==",
+      "files": [
+        "lib/dotnet/Microsoft.CSharp.dll",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/Microsoft.CSharp.dll",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "Microsoft.CSharp.4.0.0.nupkg",
+        "Microsoft.CSharp.4.0.0.nupkg.sha512",
+        "Microsoft.CSharp.nuspec",
+        "ref/dotnet/de/Microsoft.CSharp.xml",
+        "ref/dotnet/es/Microsoft.CSharp.xml",
+        "ref/dotnet/fr/Microsoft.CSharp.xml",
+        "ref/dotnet/it/Microsoft.CSharp.xml",
+        "ref/dotnet/ja/Microsoft.CSharp.xml",
+        "ref/dotnet/ko/Microsoft.CSharp.xml",
+        "ref/dotnet/Microsoft.CSharp.dll",
+        "ref/dotnet/Microsoft.CSharp.xml",
+        "ref/dotnet/ru/Microsoft.CSharp.xml",
+        "ref/dotnet/zh-hans/Microsoft.CSharp.xml",
+        "ref/dotnet/zh-hant/Microsoft.CSharp.xml",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/Microsoft.CSharp.dll",
+        "ref/netcore50/Microsoft.CSharp.xml",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._"
+      ]
+    },
+    "Unity/4.0.1": {
+      "type": "package",
+      "sha512": "RHFTCW13E186hCI0Z4R47tl2SyxQOp3TNaBlilxKktO+u+NUWyOK/nPJ25PWwgPh4j4/GM46PQszSsusui+ikw==",
+      "files": [
+        "lib/net45/Microsoft.Practices.Unity.Configuration.dll",
+        "lib/net45/Microsoft.Practices.Unity.Configuration.XML",
+        "lib/net45/Microsoft.Practices.Unity.dll",
+        "lib/net45/Microsoft.Practices.Unity.RegistrationByConvention.dll",
+        "lib/net45/Microsoft.Practices.Unity.RegistrationByConvention.XML",
+        "lib/net45/Microsoft.Practices.Unity.xml",
+        "lib/portable-net45+wp80+win8+wpa81+MonoAndroid10+MonoTouch10/Microsoft.Practices.Unity.dll",
+        "lib/portable-net45+wp80+win8+wpa81+MonoAndroid10+MonoTouch10/Microsoft.Practices.Unity.xml",
+        "lib/win8/Microsoft.Practices.Unity.dll",
+        "lib/win8/Microsoft.Practices.Unity.RegistrationByConvention.dll",
+        "lib/win8/Microsoft.Practices.Unity.RegistrationByConvention.pri",
+        "lib/win8/Microsoft.Practices.Unity.RegistrationByConvention.XML",
+        "lib/win8/Microsoft.Practices.Unity.xml",
+        "lib/wp80/Microsoft.Practices.Unity.dll",
+        "lib/wp80/Microsoft.Practices.Unity.RegistrationByConvention.dll",
+        "lib/wp80/Microsoft.Practices.Unity.RegistrationByConvention.XML",
+        "lib/wp80/Microsoft.Practices.Unity.xml",
+        "Unity.4.0.1.nupkg",
+        "Unity.4.0.1.nupkg.sha512",
+        "Unity.nuspec",
+        "UnityConfiguration30.xsd"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "": [
+      "AddressManager.Core >= 1.0.0-*",
+      "MicroCQRS >= 1.0.0-*",
+      "Unity >= 4.0.1"
+    ],
+    "DNX,Version=v4.5.1": [
+      "fx/System.Runtime "
+    ]
+  }
+}
