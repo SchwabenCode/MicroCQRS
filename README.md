@@ -12,7 +12,7 @@ The following elements are not implemented due to the simplicity:
 - Momentos
 
 # Advice and recommendation
-CQRS is a great pattern to seperate queries (ex. read operations) from commands (ex. write operations) and gives you an huge potential to
+CQRS is a great pattern to seperate queries (ex. read operations) from commands (ex. write operations) and gives you a huge potential to
 - test your logic in a really nice way
 - prove your behaviors
 - to solve bottlenecks scale your application (horizontal) with a lot of servers in a lot of datacenters in many countries
@@ -27,9 +27,9 @@ CQRS is a great pattern to seperate queries (ex. read operations) from commands 
 Due to this disadvantages it is not recommand to encompass the whole application by CQRS.
 Check twice if CQRS is really usefull for the specific implementation.
 
-## For which kind of application of application parts CQRS is recommended?
-- It is recommended for application with a huge difference in amount betweenread and write operations like a huge online shop 
-- TDB
+## For which kind of application / application parts CQRS is recommended?
+- It is recommended for application with a huge difference in amount between read and write operations like a huge online shop 
+- *add here more reasons and examples soon*
 
 # NuGet
 The core project is available on NuGet
@@ -47,3 +47,4 @@ AddressManager is a sample application when to use NOT CQRS.
 You can see: CRUD would be more simpel and less complicated here.
 
 # Remarks
+*here will be added something soon*
