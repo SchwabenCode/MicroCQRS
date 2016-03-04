@@ -40,7 +40,7 @@ Check twice if CQRS is really usefull for the specific purpose.
 # NuGet
 The core project is available on [NuGet](https://www.nuget.org/packages/MicroCQRS/) (at this point as preview!)
 ```
-Install-Package MicroCQRS -Version 0.0.1-pre -Pre
+Install-Package MicroCQRS -Version 0.0.2-pre -Pre
 ```
 
 # License
