@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using AddressManager.Commands;
 using AddressManager.Core;
+using AddressManager.Database.Commands.Notificators;
 using AddressManager.Domain;
 using AddressManager.Queries;
 using Microsoft.Practices.Unity;
@@ -32,8 +33,17 @@ namespace AddressManager
 
             foreach( Person p in personsToAdd )
             {
+                PersonAddedToDatabaseNotificator notificator = new PersonAddedToDatabaseNotificator();
+                {
+                    notificator.Added += delegate ( object sender, Guid personId )
+                    {
+                        Console.WriteLine( $"[NOTIFICATOR] Person has been added with Guid {personId}" );
+                    };
+                }
                 AddPersonCommand personCommand = new AddPersonCommand( p.Firstname, p.Lastname );
-                commandFactory.Execute( personCommand );
+
+                Console.WriteLine( $"[BEFORE EXECUTE] Adding Person: {p.Firstname}, {p.Lastname }" );
+                commandFactory.Execute( personCommand, notificator );
             }
 
 
@@ -42,7 +52,7 @@ namespace AddressManager
             IEnumerable<Person> persons = queryFactory.Resolve<IPersonListQuery>().Execute();
             foreach( Person p in persons )
             {
-                Console.WriteLine( $"LastName: {p.Lastname} - FirstName: {p.Firstname}" );
+                Console.WriteLine( $"[GET] LastName: {p.Lastname} - FirstName: {p.Firstname}" );
             }
 
             // Searching for Ben
@@ -50,7 +60,7 @@ namespace AddressManager
             IEnumerable<Person> personsByName1 = queryFactory.Resolve<IPersonByNameQuery>().Execute( "Ben" );
             foreach( Person p in personsByName1 )
             {
-                Console.WriteLine( $"LastName: {p.Lastname} - FirstName: {p.Firstname}" );
+                Console.WriteLine( $"[SEARCH BEN] LastName: {p.Lastname} - FirstName: {p.Firstname}" );
             }
 
             // Searching for Emma
@@ -58,11 +68,12 @@ namespace AddressManager
             IEnumerable<Person> personsByName2 = queryFactory.Resolve<IPersonByNameQuery>().Execute( "Emma" );
             foreach( Person p in personsByName2 )
             {
-                Console.WriteLine( $"LastName: {p.Lastname} - FirstName: {p.Firstname}" );
+                Console.WriteLine( $"[SEARCH EMMA] LastName: {p.Lastname} - FirstName: {p.Firstname}" );
             }
 
             Console.WriteLine( "DEMO PROJECT DONE. Press key to exit." );
             Console.ReadKey();
         }
+
     }
 }

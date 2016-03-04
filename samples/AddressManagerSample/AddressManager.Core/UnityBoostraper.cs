@@ -1,9 +1,9 @@
 ﻿using System;
-using AddressManager.Core.Factories;
 using AddressManager.Core.Registrators;
 using AddressManager.Database;
 using Microsoft.Practices.Unity;
 using SchwabenCode.MicroCQRS;
+using SchwabenCode.MicroCQRS.DefaultFactories;
 
 namespace AddressManager.Core
 {

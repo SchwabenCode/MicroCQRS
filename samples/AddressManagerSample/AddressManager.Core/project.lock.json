@@ -104,7 +104,8 @@
         "type": "project",
         "framework": "DNX,Version=v4.5.1",
         "dependencies": {
-          "Microsoft.CSharp": "4.0.0"
+          "Microsoft.CSharp": "4.0.0",
+          "Unity": "4.0.1"
         },
         "frameworkAssemblies": [
           "System.Runtime"
@@ -241,7 +242,8 @@
         "type": "project",
         "framework": "DNX,Version=v4.5.1",
         "dependencies": {
-          "Microsoft.CSharp": "4.0.0"
+          "Microsoft.CSharp": "4.0.0",
+          "Unity": "4.0.1"
         },
         "frameworkAssemblies": [
           "System.Runtime"
@@ -378,7 +380,8 @@
         "type": "project",
         "framework": "DNX,Version=v4.5.1",
         "dependencies": {
-          "Microsoft.CSharp": "4.0.0"
+          "Microsoft.CSharp": "4.0.0",
+          "Unity": "4.0.1"
         },
         "frameworkAssemblies": [
           "System.Runtime"
