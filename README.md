@@ -11,6 +11,12 @@ The following elements are not implemented due to the simplicity:
 - Command chaining
 - Momentos
 
+But MicroCQRS here provides a special functionality: Notificators.
+You can execute commands with the possibility to provide a frame to get information during the execution.
+
+In the AddressManager example you can see, that the Database Add Commands are executing a passed Notificator to inform the caller when and with which ID the entry has been added.
+But the same Command in the Tracing is not providing a Notificator.
+
 # Advice and recommendation
 CQRS is a great pattern to seperate queries (ex. read operations) from commands (ex. write operations) and gives you a huge potential to
 - test your logic in a really nice way
