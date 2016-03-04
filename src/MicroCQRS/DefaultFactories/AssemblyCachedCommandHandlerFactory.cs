@@ -14,17 +14,36 @@ namespace SchwabenCode.MicroCQRS.DefaultFactories
         /// <summary>
         /// Executes given command with all handlers defined in the Unity container
         /// </summary>
-        public void Execute<TCommand, TCommandNotificator>( TCommand command, TCommandNotificator commandNotificator = null )
+        public void Execute<TCommand>( TCommand command )
+            where TCommand : class, ICommand
+        {
+            int executeCount = 0;
+
+            // Execute fire and forget commands
+            foreach( ICommandHandler<TCommand> commandHandler in _container.ResolveAll<ICommandHandler<TCommand>>() )
+            {
+                commandHandler.Execute( command );
+                executeCount++;
+            }
+
+            if( executeCount == 0 )
+            {
+                throw new CommandNotFoundException( command );
+            }
+        }
+
+        /// <summary>
+        /// Executes given command with all handlers defined in the Unity container
+        /// </summary>
+        public void Execute<TCommand, TCommandNotificator>( TCommand command, TCommandNotificator commandNotificator )
             where TCommand : class, ICommand
             where TCommandNotificator : class, ICommandNotificator
         {
             int executeCount = 0;
 
-
             // Execute fire and forget commands
             foreach( ICommandHandler<TCommand> commandHandler in _container.ResolveAll<ICommandHandler<TCommand>>() )
             {
-                // Execute command
                 commandHandler.Execute( command );
                 executeCount++;
             }
@@ -32,7 +51,6 @@ namespace SchwabenCode.MicroCQRS.DefaultFactories
             // Execute command with notificator
             foreach( ICommandHandler<TCommand, TCommandNotificator> commandHandler in _container.ResolveAll<ICommandHandler<TCommand, TCommandNotificator>>() )
             {
-                // Execute command
                 commandHandler.Execute( command, commandNotificator );
                 executeCount++;
             }

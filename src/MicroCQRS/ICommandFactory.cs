@@ -7,10 +7,17 @@ namespace SchwabenCode.MicroCQRS
     /// </summary>
     public interface ICommandFactory
     {
+
         /// <summary>
         /// Executes the command.
         /// </summary>
-        void Execute<TCommand, TCommandNotificator>( TCommand command, TCommandNotificator commandNotificator = null )
+        void Execute<TCommand>( TCommand command )
+            where TCommand : class, ICommand;
+
+        /// <summary>
+        /// Executes the command.
+        /// </summary>
+        void Execute<TCommand, TCommandNotificator>( TCommand command, TCommandNotificator commandNotificator )
             where TCommand : class, ICommand
             where TCommandNotificator : class, ICommandNotificator;
     }
