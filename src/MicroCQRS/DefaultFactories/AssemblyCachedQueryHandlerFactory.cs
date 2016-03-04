@@ -1,8 +1,8 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using Microsoft.Practices.Unity;
-using SchwabenCode.MicroCQRS;
 
-namespace AddressManager.Core.Factories
+namespace SchwabenCode.MicroCQRS.DefaultFactories
 {
     public class AssemblyCachedQueryHandlerFactory : IQueryFactory
     {
@@ -16,12 +16,15 @@ namespace AddressManager.Core.Factories
         /// <summary>
         /// Resolves a query from the <see cref="IUnityContainer"/>
         /// </summary>
-        /// <typeparam name="TQuery"></typeparam>
-        /// <returns></returns>
         public TQuery Resolve<TQuery>() where TQuery : IQuery
         {
-            // Searches for all named type registers but accepts only one register entry
-            return _container.ResolveAll<TQuery>().SingleOrDefault();
+            IList<TQuery> queries = _container.ResolveAll<TQuery>().ToList();
+            if( queries.Count > 1 )
+            {
+                throw new MultipleQueryHandlersFoundException( typeof( TQuery ) );
+            }
+
+            return queries.SingleOrDefault();
         }
     }
 }

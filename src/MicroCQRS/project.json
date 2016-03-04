@@ -1,4 +1,4 @@
-﻿{
+{
   "version": "1.0.0-*",
   "description": "MicroCQRS Class Library",
   "authors": [ "Benjamin Abt", "SCHWABENCODE" ],
@@ -7,7 +7,8 @@
   "licenseUrl": "https://github.com/SchwabenCode/MicroCQRS/blob/master/LICENSE",
 
   "dependencies": {
-    "Microsoft.CSharp": "4.0.0"
+    "Microsoft.CSharp": "4.0.0",
+    "Unity": "4.0.1"
   },
 
   "frameworks": {
