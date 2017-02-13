@@ -1,5 +1,5 @@
 ﻿
-namespace SchwabenCode.MicroCQRS
+namespace SchwabenCode.MicroCQRS.Core
 {
     /// <summary>
     /// A <see cref="IQueryFactory"/> knows all registered queries

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SchwabenCode.MicroCQRS
+namespace SchwabenCode.MicroCQRS.Core
 {
     /// <summary>
     /// Exception of not found command
