@@ -1,4 +1,4 @@
-﻿namespace SchwabenCode.MicroCQRS.Core
+﻿namespace SchwabenCode.MicroCQRS
 {
     /// <summary>
     /// Interface for commands

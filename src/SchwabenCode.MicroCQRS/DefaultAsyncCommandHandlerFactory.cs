@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace SchwabenCode.MicroCQRS.Core
+namespace SchwabenCode.MicroCQRS
 {
     /// <summary>
     /// Default handler which uses <see cref="IServiceProvider"/> and <see cref="Microsoft.Extensions.DependencyInjection"/> to resolve services

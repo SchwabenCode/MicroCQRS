@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace SchwabenCode.MicroCQRS.Core
+namespace SchwabenCode.MicroCQRS
 {
     /// <summary>
     /// Default handler which uses <see cref="IServiceProvider"/> and <see cref="Microsoft.Extensions.DependencyInjection"/> to resolve services

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SchwabenCode.MicroCQRS.Core
+namespace SchwabenCode.MicroCQRS
 {
     /// <summary>
     /// Exception that represents that the system founds multiple handlers for one query which is invalid

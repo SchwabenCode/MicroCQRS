@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace SchwabenCode.MicroCQRS.Core
+namespace SchwabenCode.MicroCQRS
 {
     /// <summary>
     /// IMicroCQRSEngine
